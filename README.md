@@ -48,3 +48,5 @@ Click `Integration & services` >> `Add service`. Select `Jenkins (Github plugin)
 Enter you jenkins hook url then click `Add service`
 
 ![jenkins hook url](screenshots/jenkins_hook_url.png)
+
+Note: If you run jenkins on localhost, you can use [ngrok](https://ngrok.com/) to setup the hook url.
