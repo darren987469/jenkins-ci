@@ -37,6 +37,8 @@ pipeline {
 
 ## Setup jenkins service
 
+### Github service (deprecated)
+
 In your repository, click `Settings`
 
 ![](screenshots/repository.png)
@@ -54,6 +56,18 @@ Note: If you run jenkins on localhost, you can use [ngrok](https://ngrok.com/) t
 Push the changes to github, and you can see green check in your commits. That means the commit pass your pipeline.
 
 ![](screenshots/jenkins_work_in_commit.png)
+
+Note: Github service is announced as deprecated by Github. Use webhook instead.
+
+### Github webhook
+
+1. In repository, click `Settings`
+1. Click `Webhooks` > `Add webhook`
+1. Enter `Payload URL`, select content type `application/json`
+1. Select webhook event you want to receive.
+1. Add `Webhook`
+
+![](screenshots/github_webhook_setting.png)
 
 ### Success PR
 
